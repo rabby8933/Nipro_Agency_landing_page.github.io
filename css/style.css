@@ -1,0 +1,1269 @@
+/************************ ******
+    Google fonts Lato & Roboto
+********************************/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/************************ 
+    Webpage Global CSS 
+*************************/
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   color: #8e8e8e;
+}
+
+a {
+   text-decoration: none;
+}
+
+h1 {
+   font-family: 'Lato', sans-serif;
+   color: #fff;
+}
+
+h2 {
+   font-family: 'Lato', sans-serif;
+   font-size: 32px;
+   font-weight: 500;
+   color: #333333;
+}
+
+h3 {
+   font-family: 'Lato', sans-serif;
+   color: #333333;
+}
+
+h4 {
+   font-family: 'Roboto', sans-serif;
+   color: #333333;
+}
+
+h5 {
+   font-family: 'Lato', sans-serif;
+   color: #333333;
+}
+
+h6 {
+   font-family: 'Lato', sans-serif;
+   color: #333333;
+}
+
+p {
+   font-size: 16px;
+   font-weight: 400;
+   color: #8e8e8e;
+}
+
+
+/************************ 
+   Header section CSS
+*************************/
+header {
+   padding-bottom: 20px;
+}
+
+.logo {
+   margin-top: -16px;
+}
+
+.navbar-collapse {
+   margin-top: 25px;
+}
+
+.nav-item .nav-link {
+   font-size: 16px;
+   margin: 0 10px;
+   padding: 8px 8px 0;
+   text-transform: uppercase;
+   transition: all 0.3s ease-in-out;
+}
+
+.nav-item .nav-link:hover {
+   color: #333333;
+}
+
+
+/********************** 
+   Slider section CSS
+***********************/
+.slider-section {
+   background: url(../images/slider\ image-1.png) no-repeat center top;
+   background-size: cover;
+   padding: 210px 0;
+   height: 90vh;
+}
+
+.slider-section h1 {
+   font-size: 60px;
+   font-weight: 700;
+   letter-spacing: 2px;
+}
+
+.slider-section p {
+   padding-right: 75px;
+   margin: 30px 0;
+   line-height: 30px;
+   color: #fff;
+}
+
+.slider-section a {
+   position: relative;
+   overflow: hidden;
+   background: #fff;
+   width: 200px;
+   font-weight: 500;
+   display: block;
+   margin: 55px 0;
+   padding: 15px 35px;
+   color: #333;
+   text-transform: uppercase;
+   transition: all 0.3s ease-in-out;
+}
+
+.slider-section a::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: -100%;
+   background: #333;
+   transition: all 0.3s ease-in-out;
+}
+
+.slider-section a:hover::before {
+   left: 0;
+   z-index: -1;
+}
+
+.slider-section a .fa-arrow-right-long {
+   color: #333;
+   margin-left: 12px;
+   transition: all 0.3s ease-in-out;
+}
+
+.slider-section a:hover a .fa-arrow-right-long {
+   color: #fff;
+   z-index: 1;
+}
+
+.slider-section a:hover,
+.slider-section a:hover .fa-arrow-right-long {
+   color: #fff;
+   z-index: 1;
+}
+
+
+/********************** 
+   ABout section CSS
+***********************/
+
+/* About Heading */
+.about-section {
+   position: relative;
+}
+
+.about-section::before {
+   content: "";
+   position: absolute;
+   width: 2px;
+   height: 50px;
+   background: #333;
+   top: 0;
+   left: 50%;
+}
+
+.about-section .about-heading h2 {
+   text-align: center;
+   margin-top: 76px;
+   text-transform: uppercase;
+}
+
+.about-section .about-heading p {
+   text-align: center;
+   line-height: 25px;
+   margin: 40px 0;
+}
+
+/* About Features */
+.about-section .fi-rs-space-shuttle {
+   display: inline-block;
+   transform: rotate(-90deg)
+}
+
+.about-section .about-features {
+   text-align: center;
+   padding: 100px 0;
+}
+
+.about-section .features-item {
+   position: relative;
+   border: 1px solid #ccc;
+   margin: 0px 5px;
+   transition: all 0.3s ease-in-out;
+}
+
+.about-section h3 {
+   font-size: 20px;
+   font-weight: 600;
+   padding-top: 70px;
+   text-transform: uppercase;
+}
+
+.about-section .title-seperator {
+   width: 50px;
+   height: 1px;
+   background: #8e8e8e;
+   margin: 20px auto;
+   transition: all 0.3s ease-in-out;
+}
+
+.about-section .features-item p {
+   margin: 0;
+   padding: 0 10px 40px;
+}
+
+.about-section .features-item a {
+   display: block;
+   font-weight: 500;
+   margin-bottom: 40px;
+   color: #8e8e8e;
+   transition: all 0.3s ease-in-out;
+}
+
+.about-section .features-item a .fa-arrow-right-long {
+   margin-left: 7px;
+}
+
+.about-section .fi-icons {
+   width: 26%;
+   background: #fff;
+   margin: -22px auto;
+}
+
+.about-section .fi-icons .fi-rs-space-shuttle {
+   margin-top: -10px;
+   margin-left: 12.5px;
+}
+
+.features-item .ui-ux {
+   padding-top: 80px;
+}
+
+.about-features .features-item .fi {
+   font-size: 50px;
+   color: #8e8e8e;
+   transition: all 0.3s ease-in-out;
+}
+
+.about-features .features-item:hover {
+   cursor: pointer;
+   border: 1px solid #333;
+   transform: scale(1.01);
+}
+
+.features-item:hover .title-seperator {
+   width: 55px;
+   background: #333;
+}
+
+.about-features .features-item:hover a,
+.about-features .features-item:hover a .fa-arrow-right-long,
+.about-features .features-item:hover .fi {
+   color: #333;
+}
+
+/* About Content */
+.about-content {
+   padding: 0 0 135px;
+}
+
+.about-content .about-img {
+   width: 100%;
+}
+
+.about-content h2 {
+   text-transform: uppercase;
+   padding-bottom: 30px;
+}
+
+.about-content p {
+   line-height: 25px;
+}
+
+.about-content a {
+   transition: all 0.3s ease-in-out;
+}
+
+.about-content .fa-arrow-right-long {
+   transition: all 0.3s ease-in-out;
+}
+
+.about-content .btn-about {
+   background: transparent;
+   font-weight: 500;
+   border: 1px solid #333;
+   display: block;
+   width: 200px;
+   margin-top: 37px;
+   padding: 10px 35px;
+   color: #333;
+   text-transform: uppercase;
+   transition: all 0.3s ease-in-out;
+}
+
+.about-content .btn-about:hover {
+   background: #333;
+   color: #fff;
+}
+
+.about-content .btn-about .fa-arrow-right-long {
+   color: #333;
+   margin: 10px 0;
+   margin-left: 10px;
+   transition: all 0.3s ease-in-out;
+}
+
+.about-content .btn-about:hover i {
+   color: #fff;
+}
+
+
+/************************** 
+   Recent Work section CSS
+***************************/
+.recent-works {
+   position: relative;
+   background: #f8f8f8;
+   padding: 75px 0 100px;
+}
+
+.recent-works::before {
+   content: "";
+   position: absolute;
+   width: 2px;
+   height: 50px;
+   background: #333;
+   top: 0;
+   left: 50%;
+}
+
+.recent-works h2 {
+   text-align: center;
+   margin-top: 6px;
+   text-transform: uppercase;
+}
+
+.recent-works {}
+
+.recent-works {}
+
+.recent-works {}
+
+.recent-works {}
+
+.recent-works {}
+
+
+/************************* 
+   Services section CSS
+**************************/
+.services-section {
+   position: relative;
+   padding: 75px 0 100px;
+}
+
+.services-section::before {
+   content: "";
+   position: absolute;
+   width: 2px;
+   height: 50px;
+   background: #333;
+   top: 0;
+   left: 50%;
+}
+
+.services-section h2 {
+   text-align: center;
+   margin: 6px 0 40px;
+   text-transform: uppercase;
+}
+
+.services-section .services-items {
+   cursor: pointer;
+   padding-top: 50px;
+}
+
+.services-section .services-heading {
+   display: flex;
+   align-items: center;
+}
+
+.services-section .fi {
+   font-size: 40px;
+   transition: all 0.3s ease-in-out;
+}
+
+.services-section .services-items:hover .fi {
+   color: #333;
+   transform: scale(1.02);
+}
+
+.services-section h3 {
+   font-size: 22px;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding-left: 22px;
+   color: #8e8e8e;
+   transition: all 0.3s ease-in-out;
+}
+
+.services-section .services-items:hover h3 {
+   color: #333;
+}
+
+.services-section p {
+   padding: 25px 0 20px;
+}
+
+.services-section .services-seperator {
+   width: 100%;
+   height: 1px;
+   background: #ccc;
+   transition: all 0.3s ease-in-out;
+}
+
+.services-section .services-items:hover .services-seperator {
+   background: #333;
+}
+
+
+/******************************** 
+   Portfolio-section section CSS
+*********************************/
+.portfolio-section {
+   background: url(../images/who\ work\ with\ us\ bg.png) no-repeat center top;
+   position: relative;
+   background-size: cover;
+   padding: 75px 0 100px;
+}
+
+.portfolio-section::before {
+   content: "";
+   position: absolute;
+   width: 2px;
+   height: 50px;
+   background: #333;
+   top: 0;
+   left: 50%;
+}
+
+.portfolio-section h2 {
+   text-align: center;
+   margin: 6px 0 40px;
+   text-transform: uppercase;
+}
+
+.portfolio-section .portfolio-items {
+   cursor: pointer;
+   overflow: hidden;
+   position: relative;
+   background: #fff;
+   width: 98%;
+   margin: 60px auto 0;
+   transition: all 0.3s ease-in-out;
+}
+
+.portfolio-section img {
+   width: 100%;
+}
+
+.portfolio-section h3 {
+   font-size: 18px;
+   font-weight: 600;
+   margin: 0;
+   padding: 20px 0 10px 25px;
+   text-transform: uppercase;
+}
+
+.portfolio-section p {
+   padding: 0 0 15px 25px;
+}
+
+.portfolio-items .icons {
+   position: absolute;
+   top: 50px;
+   left: -40px;
+   transition: all 0.3s ease-in-out;
+}
+
+.portfolio-items:hover .icons {
+   left: 0;
+}
+
+.icons ul {
+   padding: 0;
+   margin: 0;
+}
+
+.icons ul li {
+   list-style: none;
+   background: #fff;
+   width: 40px;
+   height: 40px;
+   border-right: 2px solid #fff;
+   text-align: center;
+   align-items: center;
+   line-height: 50px;
+   transition: all 0.3s ease-in-out;
+}
+
+.icons ul li a i {
+   font-size: 25px;
+   color: #8e8e8e;
+   transition: all 0.3s ease-in-out;
+}
+
+.icons ul li a i:hover {
+   color: #333;
+}
+
+.icons ul li:hover {
+   border-right: 2px solid #333;
+   background: #f8f8f8;
+}
+
+
+/************************ 
+   Pricing section CSS
+**************************/
+.pricing-section {
+   position: relative;
+   padding: 75px 0 100px;
+}
+
+.pricing-section::before {
+   content: "";
+   position: absolute;
+   width: 2px;
+   height: 50px;
+   background: #333;
+   top: 0;
+   left: 50%;
+}
+
+.pricing-section h2 {
+   text-align: center;
+   margin: 6px 0 40px;
+   text-transform: uppercase;
+}
+
+/* Price Details boxs */
+.pricing-section .price-details-1 {
+   cursor: pointer;
+   position: relative;
+   width: 100%;
+   border: 1px solid #ccc;
+   margin-top: 60px;
+   padding-top: 40px;
+   transition: all 0.3s ease-in-out;
+}
+
+.pricing-section .price-details-1::before {
+   content: " ";
+   position: absolute;
+   width: 74px;
+   height: 5px;
+   top: -3px;
+   left: 30px;
+   background: #fff;
+}
+
+.pricing-section .price-details-1::after {
+   content: "BASIC";
+   position: absolute;
+   font-size: 22px;
+   font-weight: 500;
+   width: 10px;
+   height: 2px;
+   top: -16px;
+   left: 36px;
+   color: #333;
+}
+
+.pricing-section .price-details-2 {
+   cursor: pointer;
+   position: relative;
+   width: 100%;
+   border: 1px solid #ccc;
+   margin-top: 60px;
+   padding-top: 40px;
+   transition: all 0.3s ease-in-out;
+}
+
+.pricing-section .price-details-2::before {
+   content: " ";
+   position: absolute;
+   width: 124px;
+   height: 5px;
+   top: -3px;
+   left: 30px;
+   background: #fff;
+}
+
+.pricing-section .price-details-2::after {
+   content: "STANDARD";
+   position: absolute;
+   font-size: 22px;
+   font-weight: 500;
+   width: 10px;
+   height: 2px;
+   top: -16px;
+   left: 36px;
+   color: #333;
+}
+
+.pricing-section .price-details-3 {
+   cursor: pointer;
+   position: relative;
+   width: 100%;
+   border: 1px solid #ccc;
+   margin-top: 60px;
+   padding-top: 40px;
+   transition: all 0.3s ease-in-out;
+}
+
+.pricing-section .price-details-3::before {
+   content: " ";
+   position: absolute;
+   width: 139px;
+   height: 5px;
+   top: -3px;
+   left: 30px;
+   background: #fff;
+}
+
+.pricing-section .price-details-3::after {
+   content: "ENTERPRISE ";
+   position: absolute;
+   font-size: 22px;
+   font-weight: 500;
+   width: 10px;
+   height: 2px;
+   top: -16px;
+   left: 36px;
+   color: #333;
+}
+
+.pricing-section .price-details-4 {
+   cursor: pointer;
+   position: relative;
+   width: 100%;
+   border: 1px solid #ccc;
+   margin-top: 60px;
+   padding-top: 40px;
+   transition: all 0.3s ease-in-out;
+}
+
+.pricing-section .price-details-4::before {
+   content: " ";
+   position: absolute;
+   width: 120px;
+   height: 5px;
+   top: -3px;
+   left: 30px;
+   background: #fff;
+}
+
+.pricing-section .price-details-4::after {
+   content: "PLATINUM";
+   position: absolute;
+   font-size: 22px;
+   font-weight: 500;
+   width: 10px;
+   height: 2px;
+   top: -16px;
+   left: 36px;
+   color: #333;
+}
+
+.pricing-section ul {
+   margin: 0;
+   padding-top: 10px;
+}
+
+.pricing-section ul li {
+   list-style: none;
+   padding-top: 24px;
+}
+
+.pricing-section h4 {
+   display: inline;
+   font-size: 40px;
+   padding-left: 30px;
+}
+
+.pricing-section span {
+   font-size: 20px;
+   padding-left: 10px;
+}
+
+.pricing-section .btn-signup {
+   background: transparent;
+   font-weight: 500;
+   border: 1px solid #ccc;
+   display: block;
+   text-align: center;
+   width: 200px;
+   margin: 50px auto 40px;
+   padding: 6px 35px;
+   color: #8e8e8e;
+   text-transform: uppercase;
+   transition: all 0.3s ease-in-out;
+}
+
+.pricing-section .btn-signup:hover {
+   background: #f8f8f8;
+}
+
+.pricing-section .btn-signup .fa-arrow-right-long {
+   color: #8e8e8e;
+   margin: 10px 0;
+   margin-left: 10px;
+   transition: all 0.3s ease-in-out;
+}
+
+.pricing-section .price-details-1:hover,
+.pricing-section .price-details-2:hover,
+.pricing-section .price-details-3:hover,
+.pricing-section .price-details-4:hover {
+   border: 1px solid #333;
+   transform: scale(1.01);
+}
+
+.price-details-1:hover .btn-signup,
+.price-details-2:hover .btn-signup,
+.price-details-3:hover .btn-signup,
+.pricing-section .price-details-4:hover .btn-signup {
+   border: 1px solid #333;
+   color: #333;
+}
+
+.pricing-section .price-details-1:hover .fa-arrow-right-long,
+.pricing-section .price-details-2:hover .fa-arrow-right-long,
+.pricing-section .price-details-3:hover .fa-arrow-right-long,
+.pricing-section .price-details-4:hover .fa-arrow-right-long {
+   color: #333;
+}
+
+
+/********************** 
+   Buying section CSS
+***********************/
+.buying-section {
+   background: #f8f8f8;
+   padding: 30px 0;
+   align-items: center;
+}
+
+.buying-section p {
+   font-size: 18px;
+   font-weight: 500;
+   color: #333;
+   margin: 0;
+   margin-top: 5px;
+   text-transform: uppercase;
+}
+
+.buying-section .col-lg-6 {
+   padding: 0;
+}
+
+.buying-section .btn-buying {
+   float: right;
+   background: transparent;
+   font-weight: 500;
+   border: 1px solid #333;
+   display: block;
+   text-align: center;
+   width: 200px;
+   padding: 6px 35px;
+   color: #333;
+   text-transform: uppercase;
+   transition: all 0.3s ease-in-out;
+}
+
+.buying-section .btn-buying:hover {
+   background: #333;
+   color: #fff;
+}
+
+.buying-section .btn-buying .fa-arrow-right-long {
+   color: #333;
+   margin: 10px 0;
+   margin-left: 10px;
+   transition: all 0.3s ease-in-out;
+}
+
+.buying-section .btn-buying:hover .fa-arrow-right-long {
+   color: #fff;
+}
+
+
+/************************** 
+   Testimonial section CSS
+***************************/
+.testimonial-section {
+   padding: 100px 0 50px;
+}
+
+.testimonial-section .content {
+   border: 1px solid #ccc;
+   padding: 35px 0 35px 25px;
+}
+
+.testimonial-section .content img {
+   width: 100%;
+}
+
+.testimonial-section .content .title {
+   font-size: 18px;
+   margin: 0;
+   padding: 5px 0;
+}
+
+.testimonial-section .col-lg-11 {
+   padding: 0;
+}
+
+.testimonial-section .content .details {
+   margin: 0;
+   padding: 15px 0 0;
+}
+
+.testimonial-section h4 {
+   text-transform: uppercase;
+}
+
+.testimonial-section .preview-next {
+   position: relative;
+   width: 88%;
+   height: 100%;
+   margin-left: 24px;
+   border: 1px solid #ccc;
+   background: #f8f8f8;
+   align-items: center;
+}
+
+.testimonial-section .preview-next .prev {
+   position: absolute;
+   transform: rotate(90deg);
+   font-size: 18px;
+   color: #8e8e8e;
+   top: 30px;
+   left: 11px;
+   background: none;
+   border: none;
+   text-transform: uppercase;
+   transition: all 0.3s ease-in-out;
+}
+
+.testimonial-section .preview-next .prev:hover {
+   color: #333;
+}
+
+.testimonial-section .preview-next .next {
+   position: absolute;
+   transform: rotate(90deg);
+   font-size: 18px;
+   color: #8e8e8e;
+   bottom: 32px;
+   left: 11px;
+   background: none;
+   border: none;
+   text-transform: uppercase;
+   transition: all 0.3s ease-in-out;
+}
+
+.testimonial-section .preview-next .next:hover {
+   color: #333;
+}
+
+.testimonial-section .preview-next .fa-bars {
+   position: absolute;
+   cursor: pointer;
+   top: 46%;
+   left: 36%;
+   font-size: 22px;
+}
+
+
+/************************** 
+   Contact section CSS
+***************************/
+.contact-section {
+   margin: 60px 0;
+}
+
+.contact-section .container {
+   border: 1px solid #ccc;
+}
+
+.contact-section .contact-heading {
+   text-align: center;
+   background: #fff;
+   width: 230px;
+   display: block;
+   margin: -20px auto 50px;
+   text-transform: uppercase;
+}
+
+.contact-section .form-control {
+   outline: 0;
+   border-width: 0 0 1px;
+   border-color: #ccc;
+   border-radius: 0;
+   margin: 20px 0;
+   transition: all 0.3s ease-in-out;
+}
+
+.contact-section .textarea {
+   margin: 40px 0;
+}
+
+.contact-section .form-control:focus {
+   border-color: #333;
+   box-shadow: none;
+}
+
+.contact-section .form-control::placeholder {
+   font-weight: 400;
+   letter-spacing: 1px;
+}
+
+.contact-section .form-control:focus::placeholder {
+   color: #333;
+}
+
+.contact-section .btn-contact {
+   background: transparent;
+   font-weight: 500;
+   border: 1px solid #333;
+   display: block;
+   text-align: center;
+   width: 200px;
+   padding: 6px 35px;
+   color: #333;
+   margin: 40px auto 50px;
+   text-transform: uppercase;
+   transition: all 0.3s ease-in-out;
+}
+
+.contact-section .btn-contact:hover {
+   background: #333;
+   color: #fff;
+}
+
+.contact-section .btn-contact .fa-arrow-right-long {
+   color: #333;
+   margin: 10px 0;
+   margin-left: 10px;
+   transition: all 0.3s ease-in-out;
+}
+
+.contact-section .btn-contact:hover .fa-arrow-right-long {
+   color: #fff;
+}
+
+
+/************************************ 
+   Nipro footer section section CSS
+*************************************/
+.nipro-footer {
+   position: relative;
+   background: url(../images/footer\ background.png) no-repeat center top;
+   background-size: cover;
+   padding: 50px 0 24px;
+}
+
+.nipro-footer::before {
+   content: "";
+   position: absolute;
+   width: 2px;
+   height: 50px;
+   background: #333;
+   top: 0;
+   left: 50%;
+}
+
+.nipro-footer .separator {
+   width: 100%;
+   height: 1px;
+   background: #fff;
+   margin: 60px 0 40px;
+}
+
+.footer-links h2 {
+   text-align: center;
+   margin: 6px 0 30px;
+   text-transform: uppercase;
+}
+
+.footer-links p {
+   color: #fff;
+   text-align: center;
+   line-height: 28px;
+   margin-bottom: 35px;
+}
+
+.footer-links ul {
+   padding: 0;
+   text-align: center;
+}
+
+.footer-links ul li {
+   list-style: none;
+   display: inline;
+   margin: 0 8px;
+}
+
+.footer-links ul li .fa-brands {
+   font-size: 24px;
+   width: 50px;
+   height: 50px;
+   border: 1px solid #fff;
+   line-height: 50px;
+   color: #fff;
+   transition: all 0.3s ease-in-out;
+}
+
+.footer-links ul li .fa-brands:hover {
+   background: #fff;
+   color: #333;
+}
+
+.main-footer p {
+   color: #fff;
+   letter-spacing: .5px;
+}
+
+.main-footer .footer-menus ul {
+   padding: 0;
+   text-align: right;
+}
+
+.main-footer .footer-menus ul li {
+   list-style: none;
+   display: inline;
+   margin: 0 20px;
+}
+
+.main-footer .footer-menus ul li a {
+   color: #fff;
+}
+
+
+
+
+
+/***********************
+    Mobile Responsive
+************************/
+@media (min-width: 320px) and (max-width: 576px) {
+
+   h2 {
+      font-size: 28px;
+   }
+
+   header {
+      padding-bottom: 10px;
+   }
+
+   .logo {
+      width: 90%;
+   }
+
+   .navbar-toggler {
+      margin-top: 10px;
+   }
+
+   .slider-section {
+      padding: 70px 0;
+      height: 80vh;
+      text-align: center;
+   }
+
+   .slider-section h1 {
+      font-size: 50px;
+      font-weight: 700;
+      letter-spacing: 1px;
+   }
+
+   .slider-section p {
+      line-height: 24px;
+      padding: 0 30px;
+   }
+
+   .slider-section a {
+      margin: 55px auto;
+   }
+
+   .about-section {
+      padding: 0 30px;
+   }
+
+   .about-section .about-heading p {
+      margin: 30px 0;
+   }
+
+   .about-content {
+      padding: 0 0 65px;
+   }
+
+   .about-section .features-item {
+      margin: 25px 20px;
+   }
+
+   .about-content h2 {
+      padding: 15px 0;
+   }
+
+   .about-section h3 {
+      padding-top: 45px;
+   }
+
+   .features-item .ui-ux {
+      padding-top: 60px;
+   }
+
+   .about-section .about-features {
+      padding: 40px 0;
+   }
+
+   .about-content .about-img {
+      margin-bottom: 30px;
+   }
+
+   .about-content p {
+      line-height: 24px;
+   }
+
+   .services-section {
+      padding: 65px 0 50px;
+   }
+
+   .services-section h2 {
+      font-size: 28px;
+      margin: 0px 0 25px;
+   }
+
+   .services-section .services-items {
+      padding: 25px 50px;
+      text-align: center;
+   }
+
+   .services-section .services-heading {
+      justify-content: center;
+   }
+
+   .recent-works {
+      padding: 65px 0 60px;
+   }
+
+   .services-section p {
+      padding: 10px 0 0px;
+   }
+
+   .portfolio-section {
+      padding: 65px 0 60px;
+   }
+
+   .portfolio-section .col-lg-3 {
+      padding: 0 50px;
+   }
+
+   .portfolio-section h2 {
+      margin: 6px 0 25px;
+   }
+
+   .portfolio-section p {
+      padding: 0 0 20px 25px;
+      margin: 0;
+   }
+
+   .pricing-section h2 {
+      margin: 6px 0;
+   }
+
+   .pricing-section {
+      padding: 65px 0 55px;
+   }
+
+   .priceing-details {
+      padding: 0 50px;
+   }
+
+   .pricing-section ul li {
+      padding-top: 20px;
+   }
+
+   .buying-section p {
+      margin: 25px 0;
+      text-align: center;
+   }
+
+   .buying-section {
+      padding: 10px 0;
+   }
+
+   .buying-section .btn-buying {
+      margin: 15px auto 25px;
+      float: none;
+   }
+
+   .contact-section .contact-heading {
+      width: 200px;
+      margin: -20px auto 35px;
+   }
+
+   .contact-section {
+      margin: 60px 25px 55px;
+   }
+
+   .contact-section .col-lg-8 {
+      padding: 0 20px;
+   }
+
+   .nipro-footer {
+      padding: 50px 0 30px;
+   }
+
+   .footer-links ul li .fa-brands {
+      font-size: 20px;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+   }
+
+   .nipro-footer .separator {
+      margin: 30px 0;
+   }
+
+   .main-footer p {
+      text-align: center;
+   }
+
+   .main-footer .footer-menus ul li {
+      margin: 0 10px;
+   }
+
+   .main-footer .footer-menus ul {
+      text-align: center;
+      padding: 10px 0 0;
+   }
+
+}
