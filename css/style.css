@@ -1064,6 +1064,11 @@ header {
 
 .main-footer .footer-menus ul li a {
    color: #fff;
+   transition: all 0.3s ease-in-out;
+}
+
+.main-footer .footer-menus ul li a:hover {
+   color: rgb(236, 235, 235);
 }
 
 
@@ -1074,6 +1079,11 @@ header {
     Mobile Responsive
 ************************/
 @media (min-width: 320px) and (max-width: 576px) {
+
+   .navbar-brand {
+      margin: 0;
+      padding: 0;
+   }
 
    h2 {
       font-size: 28px;
@@ -1092,13 +1102,13 @@ header {
    }
 
    .slider-section {
-      padding: 120px 0 60px;
+      padding: 100px 0 60px;
       height: 80vh;
       text-align: center;
    }
 
    .slider-section h1 {
-      font-size: 50px;
+      font-size: 46px;
       font-weight: 700;
       letter-spacing: 1px;
    }
@@ -1227,11 +1237,12 @@ header {
 
    .contact-section .contact-heading {
       width: 200px;
-      margin: -20px auto 35px;
+      margin: -20px auto 25px;
    }
 
    .contact-section {
-      margin: 60px 25px 55px;
+      margin: 0 25px 0;
+      padding: 100px 0 60px;
    }
 
    .contact-section .col-lg-8 {
@@ -1247,10 +1258,11 @@ header {
       width: 45px;
       height: 45px;
       line-height: 45px;
+      margin: 8px 0;
    }
 
    .nipro-footer .separator {
-      margin: 30px 0;
+      margin: 25px 0 30px;
    }
 
    .main-footer p {
