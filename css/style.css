@@ -59,6 +59,10 @@ p {
    color: #8e8e8e;
 }
 
+::selection{
+   background-color: rgb(205, 253, 255);
+   color: #000;
+}
 
 /************************ 
    Header section CSS
