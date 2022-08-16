@@ -21,6 +21,8 @@
 
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
   <!-- Fancybox CSS file -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
@@ -29,6 +31,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- Wow Css file -->
+  <link rel="stylesheet" href="css/animate.css">
 
   <!-- Theme CSS file -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -48,15 +53,17 @@
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <!-- Header Logo -->
-              <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Header logo" class="logo"></a>
+              <a class="navbar-brand wow" href="#">
+                <img src="images/logo.png" alt="Header logo" class="logo wow fadeInLeft">
+              </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <!-- Nav Menus Start -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <div class="collapse navbar-collapse wow" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0  wow fadeInRight">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
@@ -90,13 +97,13 @@
   <section class="slider-section">
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <h1>We Have Talented Team</h1>
+      <div class="row wow">
+        <div class="col-lg-7 wow fadeIn">
+          <h1 class="wow fadeInDown">We Have Talented Team</h1>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. hello Lorem Ipsum has been the
             industry's
             stanard dummy text ever since the hello bossLorem Ipsum is simply dummy text of the printing</p>
-          <a href="javascript:;" class="">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="javascript:;" class=" wow fadeInLeft">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
       </div>
     </div>
@@ -106,14 +113,14 @@
 
 
   <!-- About Section Start -->
-  <section class="about-section" id="about">
+  <section class="about-section wow" id="about">
 
     <div class="container">
 
       <!-- About Heading Row -->
       <div class="row">
         <div class="col-lg-12 about-heading">
-          <h2>Welcome to Nipro</h2>
+          <h2 class="wow fadeInDown">Welcome to Nipro</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard
             dummy text ever he to since the 1500s, when an unknown printer took a galley of type and scrambled it to
@@ -126,7 +133,7 @@
 
       <!-- About Features Row -->
       <div class="row about-features">
-        <div class="col-lg-3">
+        <div class="col-lg-3 wow fadeInDown">
           <div class="features-item">
             <div class="fi-icons">
               <i class="fi fi-rs-diamond"></i>
@@ -138,7 +145,8 @@
             <a href="javascript:;">MORE <i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 wow fadeInDown">
           <div class="features-item">
             <div class="fi-icons">
               <i class="fi fi-rs-space-shuttle"></i>
@@ -150,7 +158,8 @@
             <a href="javascript:;">MORE <i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 wow fadeInDown">
           <div class="features-item">
             <div class="fi-icons">
               <i class="fi fi-rs-bookmark"></i>
@@ -161,7 +170,8 @@
             <a href="javascript:;">MORE <i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 wow fadeInDown">
           <div class="features-item">
             <div class="fi-icons">
               <i class="fi fi-rs-shield-plus"></i>
@@ -182,7 +192,7 @@
             <img src="images/about-img.png" class="about-img" alt="">
           </div>
           <div class="col-lg-6 offset-lg-1">
-            <h2>About US</h2>
+            <h2 class="wow fadeIn">About US</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industr hello Ipsum has been the
               industry's standard
               dummy text ever since the 1500s, ian unknown printer took a galley omen book. It has survived not only
@@ -193,7 +203,7 @@
             <p>with the release of Letraset sheets containing Lorem Ipsum passages, heo and more recently with desktop
               publishing
               software like A PageMaker including versions of Lorem Ipsum.</p>
-            <a href="javascript:;" class="btn-about">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+            <a href="javascript:;" class="btn-about wow fadeInLeft">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
       </div>
@@ -205,28 +215,28 @@
 
 
   <!-- Recent Works Section Start -->
-  <section class="recent-project">
+  <section class="recent-project wow">
 
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2>Recent Works</h2>
+          <h2 class="wow fadeInDown">Recent Works</h2>
         </div>
       </div>
 
       <div class="row mb-4 mt-3 button-group filter-button-group">
         <div class="col-lg-12 justify-content-center d-flex">
-          <button data-filter="*" type="button" class="btn btn-primary active">All</button>
-          <button data-filter=".app" type="button" class="btn btn-primary">App Design</button>
-          <button data-filter=".web" type="button" class="btn btn-primary">Web Design</button>
-          <button data-filter=".ui" type="button" class="btn btn-primary">UI Design</button>
-          <button data-filter=".ps" type="button" class="btn btn-primary">Photoshop</button>
+          <button data-filter="*" type="button" class="btn btn-primary active wow fadeInLeft">All</button>
+          <button data-filter=".app" type="button" class="btn btn-primary wow fadeInLeft">App Design</button>
+          <button data-filter=".web" type="button" class="btn btn-primary wow fadeIn">Web Design</button>
+          <button data-filter=".ui" type="button" class="btn btn-primary wow fadeInRight">UI Design</button>
+          <button data-filter=".ps" type="button" class="btn btn-primary wow fadeInRight">Photoshop</button>
         </div>
       </div>
 
       <div class="row project-lists">
 
-        <div class="col-lg-4 col-mb-6 app">
+        <div class="col-lg-4 col-mb-6 app wow fadeInLeft">
           <div class="project-item">
 
             <div class="project-img">
@@ -248,7 +258,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-mb-6 web">
+        <div class="col-lg-4 col-mb-6 web wow fadeInDown">
           <div class="project-item">
 
             <div class="project-img">
@@ -271,7 +281,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-mb-6 ui">
+        <div class="col-lg-4 col-mb-6 ui wow fadeInRight">
           <div class="project-item">
 
             <div class="project-img">
@@ -294,7 +304,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-mb-6 ps">
+        <div class="col-lg-4 col-mb-6 ps wow fadeInLeft">
           <div class="project-item">
 
             <div class="project-img">
@@ -318,7 +328,7 @@
         </div>
 
 
-        <div class="col-lg-4 col-mb-6 app">
+        <div class="col-lg-4 col-mb-6 app wow fadeInUp">
           <div class="project-item">
 
             <div class="project-img">
@@ -342,7 +352,7 @@
         </div>
 
 
-        <div class="col-lg-4 col-mb-6 web">
+        <div class="col-lg-4 col-mb-6 web wow fadeInRight">
           <div class="project-item">
 
             <div class="project-img">
@@ -374,15 +384,15 @@
 
 
   <!-- Services Section Start -->
-  <section class="services-section" id="service">
+  <section class="services-section wow" id="service">
 
     <div class="container">
       <div class="row">
-        <h2>Why Choose Nipro</h2>
+        <h2 class="wow fadeInDown">Why Choose Nipro</h2>
         <div class="col-lg-12">
 
           <!-- 1st row -->
-          <div class="row">
+          <div class="row wow fadeInDown">
             <div class="col-lg-4 services-items">
               <div class="services-heading">
                 <i class="fi fi-rs-diamond"></i>
@@ -410,7 +420,7 @@
           </div>
 
           <!-- 2nd row -->
-          <div class="row">
+          <div class="row wow fadeInUp">
             <div class="col-lg-4 services-items">
               <div class="services-heading">
                 <i class="fi fi-rs-clock-five"></i>
@@ -446,15 +456,15 @@
 
 
   <!-- Portfolio Section Start -->
-  <section class="portfolio-section" id="portfolio">
+  <section class="portfolio-section wow" id="portfolio">
 
     <div class="container">
       <div class="row">
 
-        <h2>Who work with us</h2>
+        <h2 class="wow fadeInDown">Who work with us</h2>
 
         <div class="col-lg-3">
-          <div class="portfolio-items">
+          <div class="portfolio-items wow fadeInLeft">
             <div class="icons">
               <ul>
                 <li><a href="javascript:;"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -470,7 +480,7 @@
         </div>
 
         <div class="col-lg-3">
-          <div class="portfolio-items">
+          <div class="portfolio-items wow fadeInDown">
             <div class="icons">
               <ul>
                 <li><a href="javascript:;"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -486,7 +496,7 @@
         </div>
 
         <div class="col-lg-3">
-          <div class="portfolio-items">
+          <div class="portfolio-items wow fadeInDown">
             <div class="icons">
               <ul>
                 <li><a href="javascript:;"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -502,7 +512,7 @@
         </div>
 
         <div class="col-lg-3">
-          <div class="portfolio-items">
+          <div class="portfolio-items wow fadeInRight">
             <div class="icons">
               <ul>
                 <li><a href="javascript:;"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -525,15 +535,15 @@
 
 
   <!-- Pricing Section Start -->
-  <section class="pricing-section">
+  <section class="pricing-section wow">
 
     <div class="container">
       <div class="row">
 
-        <h2>Best Pricing</h2>
+        <h2 class="wow fadeInDown">Best Pricing</h2>
 
         <div class="priceing-details">
-          <div class="col-lg-12">
+          <div class="col-lg-12 wow fadeInUp">
             <div class="row">
               <div class="col-lg-3">
                 <div class="price-details-1">
@@ -621,21 +631,22 @@
 
 
   <!-- Testimonial Section Start -->
-  <section class="testimonial-section">
+  <section class="testimonial-section wow">
 
     <div class="container">
       <div class="row">
         <div class="col-lg-11">
 
-          <div class="owl-carousel">
+          <div class=" wow fadeInDown owl-carousel owl-theme">
 
             <div class="content">
               <div class="row">
                 <div class="col-lg-3 col-mb-12 content-img">
-                  <img src="images/testimonial section Al-Rayhan.png" alt="">
+                  <img class="wow flash" src="images/testimonial section Al-Rayhan.png" alt="">
+                  <i class="fas fa-quote-left"></i>
                 </div>
                 <div class="col-lg-8">
-                  <h4>Al-Rayhan</h4>
+                  <h4 >Al-Rayhan</h4>
                   <p class="title">Co-Founder & CEO</p>
                   <h5>DeviserWeb</h5>
                   <p class="details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -654,6 +665,7 @@
               <div class="row">
                 <div class="col-lg-3 content-img">
                   <img src="images/Ashiful Haque Pappu testimonial.png" alt="">
+                  <i class="fas fa-quote-left"></i>
                 </div>
                 <div class="col-lg-8">
                   <h4>Ashiful Haque Pappu</h4>
@@ -675,6 +687,7 @@
               <div class="row">
                 <div class="col-lg-3 content-img">
                   <img src="images/Saif Ullah Patowary testimonial.png" alt="">
+                  <i class="fas fa-quote-left"></i>
                 </div>
                 <div class="col-lg-8">
                   <h4>Saif Ullah Patowary</h4>
@@ -696,6 +709,7 @@
               <div class="row">
                 <div class="col-lg-3 content-img">
                   <img src="images/Santush Deb Nath testimonial.png" alt="">
+                  <i class="fas fa-quote-left"></i>
                 </div>
                 <div class="col-lg-8">
                   <h4>Santush Deb Nath</h4>
@@ -713,25 +727,8 @@
               </div>
             </div>
 
-            <!-- <div class="owl-nav">
-              <button type="button" role="presentation" class="owl-prev btn-prev">
-                <span aria-label="Previous">PREV</span>
-              </button>
-              <button type="button" role="presentation" class="owl-next btn-next">
-                <span aria-label="Next">NEXT</span>
-              </button>
-            </div> -->
-
           </div>
 
-        </div>
-
-        <div class="col-lg-1">
-          <div class="preview-next">
-            <button class="prev">prev</button>
-            <i class="fa-solid fa-bars"></i>
-            <button class="next">next</button>
-          </div>
         </div>
 
       </div>
@@ -742,13 +739,13 @@
 
 
   <!-- Contact Section Start -->
-  <section class="contact-section" id="contact">
+  <section class="contact-section wow" id="contact">
 
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="contact-heading">
-            <h2>Contact us</h2>
+            <h2 class="wow fadeIn">Contact us</h2>
           </div>
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
@@ -773,7 +770,7 @@
                     placeholder="Your Message..."></textarea>
                 </div>
               </form>
-              <a href="javascript:;" class="btn-contact">SENT NOW<i class="fa-solid fa-arrow-right-long"></i></a>
+              <a href="javascript:;" class="btn-contact wow flash">SENT NOW<i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
@@ -785,7 +782,7 @@
 
 
   <!-- Footer Section Start -->
-  <Footer class="nipro-footer">
+  <Footer class="nipro-footer wow">
 
     <div class="container">
       <div class="row">
@@ -794,13 +791,13 @@
           <div class="row">
             <div class="footer-links">
               <div class="col-lg-4 offset-lg-4">
-                <h2>Nipro Agency</h2>
+                <h2 class="wow fadeInDown">Nipro Agency</h2>
                 <p>Lorem Ipsum is simply dummy text of lol he the printing and typesetting industry. Lorem Ipsum Has
                   been the koi
                   jabi mama</p>
               </div>
 
-              <div class="social-icons">
+              <div class="social-icons wow fadeInUp">
                 <ul>
                   <li><a href="javascript:;"><i class="fa-brands fa-facebook-f"></i></a></li>
                   <li><a href="javascript:;"><i class="fa-brands fa-dribbble"></i></a></li>
@@ -868,6 +865,9 @@
   <!-- Owl Carousel 2 -->
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Wow JS file -->
+  <script src="js/wow.min.js"></script>
 
   <!-- Theme javascript file -->
   <script type="text/javascript" src="js/main.js"></script>
